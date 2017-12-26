@@ -1,0 +1,155 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li, img,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, canvas, details, figcaption, figure, footer, header,
+hgroup, menu, nav, section, summary {
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+
+img {
+    border: 0;
+}
+
+body {
+    color: #FFFFFF;
+    background: #1d1d1d no-repeat center center fixed;
+    background: url("images/back.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#header {
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    margin-top: 100px;
+}
+
+#logo {
+    margin: 0 auto;
+    position: relative;
+    width: 60%;
+    padding-bottom: 50px;
+}
+
+#logo img {
+    max-width: 100%;
+}
+
+#line {
+    margin: 0 auto;
+    border-bottom: solid 1px black;
+    height: 10px;
+    width: 80%;
+}
+
+#content-wrapper {
+    margin: 0 auto;
+    width: 100%;
+}
+
+#content {
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    display: table;
+    margin-top: -60px;
+}
+
+#content li {
+    display: table-cell;
+    float: left;
+    width: 50%;
+}
+
+#content li div {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#content li div a {
+    display: block;
+    border-bottom: 5px solid transparent;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-right: 30px;
+    margin-left: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media only screen and (max-width: 1440px) {
+    #content-wrapper {
+        width: 80%;
+    }
+    #content li div a {
+        margin-right: 20px;
+        margin-left: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #content-wrapper {
+        width: 90%;
+    }
+    #content li div a {
+        margin-right: 10px;
+        margin-left: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #content-wrapper {
+        width: 95%;
+    }
+    #content li div a {
+        margin-right: 5px;
+        margin-left: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    #content li {
+        width: 100%;
+    }
+    
+    #content li div {
+        margin: 0 auto;
+        text-align: center;
+        width: 70%;
+    }
+}
+
+#content li div a:hover {
+    border-bottom: 3px solid #fff;
+}
+
+#content li div a img {
+    max-width: 100%;
+}
